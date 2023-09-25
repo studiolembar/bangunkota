@@ -1,0 +1,68 @@
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faWhatsapp, } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+
+export function Footer() {
+
+const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+useEffect(() => {
+  function getCurrentYear() {
+    setCurrentYear(new Date().getFullYear());
+  }
+  getCurrentYear();
+}, []);
+
+  return (
+    <section className="px-5 lg:px-0 font-poppins">
+      <footer className="footer bg-base-100 pb-5 text-base-content grid lg:grid-cols-4 gap-4">
+        <nav className="col-span-2 lg:col-span-1">
+          <header className="text-lg font-semibold">Connect With Us!</header>
+          <p className="text-base">Sekretariat Bangun Kota Jalan Apa Bekasi</p>
+          <div className="flex items-center">
+            <div className="bg-yellow rounded-md mr-2 w-9 h-9 flex justify-center items-center">
+            <FontAwesomeIcon icon={faGlobe} color="#ffff" size={"xl"} />
+            </div>
+            <div className="text-base">bangunkota.com</div>
+          </div>
+          <div className="flex items-center">
+            <div className="bg-yellow rounded-md mr-2 w-9 h-9 flex justify-center items-center">
+            <FontAwesomeIcon icon={faInstagram} color="#ffff" size={"xl"} />
+            </div>
+            <div className="text-base">@bangunkota.id</div>
+          </div>
+          <div className="flex items-center">
+            <div className="bg-yellow rounded-md mr-2 w-9 h-9 flex justify-center items-center">
+            <FontAwesomeIcon icon={faWhatsapp} color="#ffff" size={"xl"} />
+            </div>
+            <div className="text-base">WA Group Community Sharing</div>
+          </div>
+        </nav>
+        <nav className="lg:col-span-1">
+          <header className="text-lg font-semibold">Bangun Kota</header>
+          <a className="link text-green text-base">Home</a>
+          <a className="link text-green text-base">Profile</a>
+          <a className="link text-green text-base">Event</a>
+          <a className="link text-green text-base">Client</a>
+        </nav>
+        <nav className="lg:col-span-1">
+          <header className="text-lg font-semibold">Kebijakan Kami</header>
+          <a className="link text-green text-base">Terms and Conditions</a>
+          <a className="link text-green text-base">Privacy Policy</a>
+        </nav>
+        <nav className="col-span-2 lg:col-span-1">
+          <header>
+            <Image src="/assets/icons/bangunkota-logo.png" width={250} height={250} alt="logo"/>
+          </header>
+          <p className="text-justify text-base">Bangun Kota merupakan sebuah platform yang menaungi komunitas-komunitas dari berbagai bidang yang ada di kota / kabupaten Bekasi</p>
+        </nav>
+      </footer>
+      <footer className="footer py-4 border-t bg-base-100 text-base-content border-base-300">
+        <aside className="items-center">
+          <p className="text-base">Copyright © {currentYear} BangunKota.com</p>
+        </aside>
+      </footer>
+    </section>
+  );
+}
