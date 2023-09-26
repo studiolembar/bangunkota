@@ -1,4 +1,11 @@
 export function VisiMisi(){
+    const misiItems = [
+      {desc:"Berperan sebagai forum lintas-komunitas di Kota Bekasi"},
+      {desc:"Melestarikan budaya lokal Bekasi sebagai warisan kebudayaan yang perlu diturunkan untuk generasi mendatang"},
+      {desc:"Menghadirkan pariwisata Kota Bekasi yang berbasis nilai kebudayaan dan berkelanjutan"},
+      {desc:"Menghadirkan intervensi ruang, seni instalasi dan seni visual di ruang publik Kota Bekasi"},
+      {desc:"Menghubungkan komunitas dengan stakeholders pembentuk kota di Kota Bekasi (Hexa-helix)"},
+    ]
     return (
       <section className="mt-20 px-5 lg:px-0 font-poppins">
         <h1 className="text-center text-4xl mb-3 font-medium">Visi & Misi</h1>
@@ -16,30 +23,12 @@ export function VisiMisi(){
           <div className="lg:w-1/2 w-full">
             <h1 className="text-3xl mb-2 font-medium text-green">Misi</h1>
             <article className="text-base text-justify">
-              <div className="flex items-center my-2">
-                <div className="w-7 h-7 mr-3 flex justify-center items-center bg-green rounded-full text-base-100">1</div>
-                <div className="w-full">Berperan sebagai forum lintas-komunitas di Kota Bekasi</div>
+              {misiItems.map((item, index) => (
+              <div key={index} className="flex items-center my-2">
+                <div className="w-7 h-7 mr-3 flex justify-center items-center bg-green rounded-full text-base-100">{index + 1}</div>
+                <div className="w-full">{item.desc}</div>
               </div>
-              <div className="flex items-center my-2">
-                <div className="w-7 h-7 mr-3 flex justify-center items-center bg-green rounded-full text-base-100">2</div>
-                <div className="w-full">Melestarikan budaya lokal Bekasi sebagai warisan kebudayaan yang
-                perlu diturunkan untuk generasi mendatang</div>
-              </div>
-              <div className="flex items-center my-2">
-                <div className="w-7 h-7 mr-3 flex justify-center items-center bg-green rounded-full text-base-100">3</div>
-                <div className="w-full">Menghadirkan pariwisata Kota Bekasi yang berbasis nilai
-                kebudayaan dan berkelanjutan</div>
-              </div>
-              <div className="flex items-center my-2">
-                <div className="w-7 h-7 mr-3 flex justify-center items-center bg-green rounded-full text-base-100">4</div>
-                <div className="w-full">Menghadirkan intervensi ruang, seni instalasi dan seni visual di
-                ruang publik Kota Bekasi</div>
-              </div>
-              <div className="flex items-center my-2">
-                <div className="w-7 h-7 mr-3 flex justify-center items-center bg-green rounded-full text-base-100">5</div>
-                <div className="w-full">Menghubungkan komunitas dengan stakeholders pembentuk kota di
-                Kota Bekasi (Hexa-helix)</div>
-              </div>
+              ))}
             </article>
           </div>
         </div>
