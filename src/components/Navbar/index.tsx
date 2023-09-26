@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function NavBar() {
     const dropdownItems = [
@@ -38,16 +39,16 @@ export function NavBar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Home</a>
+                <Link href={'/'}>Home</Link>
               </li>
               <li>
-                <a>Profile</a>
+                <Link href={'/profile'}>Profile</Link>
               </li>
               <li>
-                <a>Event & Program</a>
+                <Link href={'/event-program'}>Event & Program</Link>
               </li>
               <li>
-                <a>CLient</a>
+                <Link href={'/client'}>CLient</Link>
               </li>
               <li>
                 <details>
@@ -62,7 +63,7 @@ export function NavBar() {
                 </details>
               </li>
               <li>
-                <a>Contact Us</a>
+                <Link href={'/contact'}>Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -77,16 +78,16 @@ export function NavBar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a className="hover:bg-base-100 hover:text-green text-lg">Home</a>
+              <Link href={'/'} className="hover:bg-base-100 hover:text-green text-lg">Home</Link>
             </li>
             <li>
-              <a className="hover:bg-base-100 hover:text-green text-lg">Profile</a>
+              <Link href={'/profile'} className="hover:bg-base-100 hover:text-green text-lg">Profile</Link>
             </li>
             <li>
-              <a className="hover:bg-base-100 hover:text-green text-lg">Event & Program</a>
+              <Link href={'/event-program'} className="hover:bg-base-100 hover:text-green text-lg">Event & Program</Link>
             </li>
             <li>
-              <a className="hover:bg-base-100 hover:text-green text-lg">Client</a>
+              <Link href={'/client'} className="hover:bg-base-100 hover:text-green text-lg">Client</Link>
             </li>
             <li className="dropdown">
               <label tabIndex={0} className="lg:flex hover:bg-base-100 hover:text-green text-lg">
@@ -135,7 +136,7 @@ export function NavBar() {
               </div>
             </li>
             <li>
-              <a className="hover:bg-base-100 hover:text-green text-lg">Contact Us</a>
+              <Link href={'/contact'} className="hover:bg-base-100 hover:text-green text-lg">Contact Us</Link>
             </li>
           </ul>
         </div>
