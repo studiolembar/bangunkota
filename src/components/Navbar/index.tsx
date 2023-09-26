@@ -41,7 +41,7 @@ export function NavBar() {
                 <a>Home</a>
               </li>
               <li>
-                <a>Profil</a>
+                <a>Profile</a>
               </li>
               <li>
                 <a>Event & Program</a>
@@ -80,7 +80,7 @@ export function NavBar() {
               <a className="hover:bg-base-100 hover:text-green text-lg">Home</a>
             </li>
             <li>
-              <a className="hover:bg-base-100 hover:text-green text-lg">Profil</a>
+              <a className="hover:bg-base-100 hover:text-green text-lg">Profile</a>
             </li>
             <li>
               <a className="hover:bg-base-100 hover:text-green text-lg">Event & Program</a>
