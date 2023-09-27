@@ -31,10 +31,8 @@ export function Events(){
       <section className="my-20">
         <Carousel responsive={responsive}>
           {imageItems.map((item, index) => (
-            <div key={index} className="">
-              <figure className="max-h-72 w-80 rounded-lg image-full">
-                <Image src={item.image} width={280} height={200} className="rounded-lg" alt="event" />
-              </figure>
+            <div key={index} className="flex justify-center">
+                <Image src={item.image} width={280} height={200} className="w-64 h-72 rounded-lg" alt="event" />
             </div>
           ))}
         </Carousel>

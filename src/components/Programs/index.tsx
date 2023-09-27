@@ -7,22 +7,22 @@ export function Programs() {
       {
         image: "/assets/images/programs/Program1.jpg",
         title: "Museum Sampah Indonesia+",
-        desc: "akan menjadi pusat pengetahuan terbarukan (center of renewable knowledge) mengenai pengelolaan dan pemanfaatan sampah. Berlokasi di Bantar Gebang - Kota Bekasi, dengan program unggulan mengangkat 3 aspek utama",
+        desc: "akan menjadi pusat pengetahuan terbarukan (center of renewable knowledge) mengenai pengelolaan dan pemanfaatan sampah.",
       },
       {
         image: "/assets/images/programs/Program2.jpg",
         title: "Museum Sampah Indonesia+",
-        desc: "akan menjadi pusat pengetahuan terbarukan (center of renewable knowledge) mengenai pengelolaan dan pemanfaatan sampah. Berlokasi di Bantar Gebang - Kota Bekasi, dengan program unggulan mengangkat 3 aspek utama",
+        desc: "akan menjadi pusat pengetahuan terbarukan (center of renewable knowledge) mengenai pengelolaan dan pemanfaatan sampah.",
       },
       {
         image: "/assets/images/programs/Program3.jpg",
         title: "Museum Sampah Indonesia+",
-        desc: "akan menjadi pusat pengetahuan terbarukan (center of renewable knowledge) mengenai pengelolaan dan pemanfaatan sampah. Berlokasi di Bantar Gebang - Kota Bekasi, dengan program unggulan mengangkat 3 aspek utama",
+        desc: "akan menjadi pusat pengetahuan terbarukan (center of renewable knowledge) mengenai pengelolaan dan pemanfaatan sampah.",
       },
       {
         image: "/assets/images/programs/Program4.jpg",
         title: "Museum Sampah Indonesia+",
-        desc: "akan menjadi pusat pengetahuan terbarukan (center of renewable knowledge) mengenai pengelolaan dan pemanfaatan sampah. Berlokasi di Bantar Gebang - Kota Bekasi, dengan program unggulan mengangkat 3 aspek utama",
+        desc: "akan menjadi pusat pengetahuan terbarukan (center of renewable knowledge) mengenai pengelolaan dan pemanfaatan sampah.",
       },
     ];
     const responsive = {
@@ -45,20 +45,20 @@ export function Programs() {
       };
   return (
     <section className="my-20">
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive} className="pb-10">
         {programItems.map((item, index) => (
           <div
             key={index}
-            className="card lg:w-11/12 card-side bg-base-200 shadow-xl"
+            className="card card-side w-10/12 bg-base-100 shadow-md border border-base-300 shadow-neutral-400 mx-auto font-poppins"
           >
-            <figure className="w-1/2 mr-2">
-              <Image src={item.image} width={500} height={300} layout="responsive" alt="Program" />
+            <figure className="mr-2">
+              <Image src={item.image} width={500} height={300} className="w-full h-full" alt="Program" />
             </figure>
-            <div className="card-body p-0">
-              <h2 className="card-title">{item.title}</h2>
-              <p className="">{item.desc}</p>
-              <div className="card-actions justify-end m-2">
-              <a className="bg-yellow hover:bg-yellow-light hover:cursor-pointer py-1 text-base-100 font-semibold px-4 rounded-lg text-lg">Selengkapnya</a>
+            <div className="card-body p-1">
+              <h2 className="card-title text-lg">{item.title}</h2>
+              <p className="text-sm">{item.desc}</p>
+              <div className="card-actions justify-end m-1">
+              <a className="bg-yellow hover:bg-yellow-light hover:cursor-pointer py-1 text-base-100 font-semibold px-4 rounded-lg text-sm">Selengkapnya</a>
               </div>
             </div>
           </div>
