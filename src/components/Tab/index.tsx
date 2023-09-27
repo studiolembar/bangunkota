@@ -10,7 +10,7 @@ export function Tab() {
   
     return (
       <div>
-        <h1 className="text-4xl my-3 font-medium font-poppins">
+        <h1 className="px-5 lg:px-0 text-4xl my-3 font-medium font-poppins">
           Events & Programs
         </h1>
         <div className="flex justify-center gap-4 font-poppins mt-10">

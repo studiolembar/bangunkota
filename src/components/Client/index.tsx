@@ -42,7 +42,7 @@ export function Client(){
       },
     ];
     return (
-      <section className="font-poppins mb-20">
+      <section className="px-5 lg:px-0 font-poppins mb-20">
         <h1 className="text-4xl my-3 font-medium">Clients</h1>
         {clientItems.map((item, index) => (
         <div key={index} className="my-10">
