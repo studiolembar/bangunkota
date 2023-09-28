@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { ButtonSlider } from "..";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export function Programs() {
     const programItems = [
@@ -44,26 +48,35 @@ export function Programs() {
         }
       };
   return (
-    <section className="my-20">
-      <Carousel responsive={responsive} className="pb-10">
+    <section className="my-20 font-poppins">
+      <Carousel 
+        responsive={responsive}
+        arrows={false}
+        customButtonGroup={<ButtonSlider next={function (): void {}} previous={function (): void {}} />}
+        renderButtonGroupOutside={true}
+        className="pb-10">
         {programItems.map((item, index) => (
           <div
             key={index}
-            className="card card-side w-10/12 bg-base-100 shadow-md border border-base-300 shadow-neutral-400 mx-auto font-poppins"
+            className="card lg:h-52 card-side w-11/12 bg-base-100 shadow-md border border-base-300 shadow-neutral-400 mx-auto font-poppins"
           >
-            <figure className="mr-2">
+            <figure className="mr-2 w-full">
               <Image src={item.image} width={500} height={300} className="w-full h-full" alt="Program" />
             </figure>
             <div className="card-body p-1">
               <h2 className="card-title text-lg">{item.title}</h2>
               <p className="text-sm">{item.desc}</p>
               <div className="card-actions justify-end m-1">
-              <a className="bg-yellow hover:bg-yellow-light hover:cursor-pointer py-1 text-base-100 font-semibold px-4 rounded-lg text-sm">Selengkapnya</a>
+              <a className="bg-yellow hover:bg-yellow-light hover:cursor-pointer py-2 text-base-100 font-semibold px-4 rounded-lg text-sm">Selengkapnya</a>
               </div>
             </div>
           </div>
         ))}
       </Carousel>
+      <Link href={"/events"} className="flex items-center gap-2 justify-center lg:justify-end mt-5 lg:mr-5">
+          <div className="text-green text-sm">Lihat semua</div>
+            <FontAwesomeIcon icon={faArrowRight} className="text-green" size={"sm"} />
+        </Link>
     </section>
   );
 }
