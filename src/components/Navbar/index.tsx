@@ -48,9 +48,6 @@ export function NavBar() {
                 <Link href={'/event-program'}>Event & Program</Link>
               </li>
               <li>
-                <Link href={'/client'}>CLient</Link>
-              </li>
-              <li>
                 <details>
                   <summary>Community</summary>
                   <ul>
@@ -85,9 +82,6 @@ export function NavBar() {
             </li>
             <li>
               <Link href={'/event-program'} className="hover:bg-base-100 hover:text-green text-lg">Event & Program</Link>
-            </li>
-            <li>
-              <Link href={'/client'} className="hover:bg-base-100 hover:text-green text-lg">Client</Link>
             </li>
             <li className="dropdown">
               <label tabIndex={0} className="lg:flex hover:bg-base-100 hover:text-green text-lg">

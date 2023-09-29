@@ -1,4 +1,4 @@
-import { About, Community, Footer, Hero, NavBar, Statistics } from "../components";
+import { About, Client, Community, Footer, Hero, NavBar, Statistics } from "../components";
 
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <About/>
       <Community/>
       <Statistics/>
+      <Client/>
       <Footer/>
     </div>
   );
