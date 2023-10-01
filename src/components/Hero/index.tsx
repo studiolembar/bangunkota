@@ -5,19 +5,13 @@ export function Hero() {
   return (
     <section className="font-poppins">
       <div className="lg:min-h-screen grid lg:grid-cols-2 gap-4 items-center justify-center">
-        {/* <div>
-          <Image src="/assets/images/hero-image.jpg" width={700} height={70} alt="logo"/>
-        </div> */}
         <Player
           autoplay
           loop
           src="/assets/animation/hero-animation2.json"
-          style={{ height: "500px", width: "700px" }}
+          className="w-full"
         >
-          <Controls
-            visible={false}
-            buttons={[]}
-          />
+          <Controls visible={false}/>
         </Player>
         <div className="text-center lg:text-left">
           <h1 className="text-4xl font-bold mb-3">

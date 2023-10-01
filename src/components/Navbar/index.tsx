@@ -66,7 +66,7 @@ export function NavBar() {
           </div>
           <Image
             alt="bangunkota-logo"
-            className="mr-3 h-6 sm:h-9"
+            className="mr-3 h-8 lg:h-9"
             src="/assets/icons/bangunkota-logo.png"
             width={130}
             height={30}

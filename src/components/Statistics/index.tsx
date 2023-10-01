@@ -13,7 +13,7 @@ export function Statistics() {
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
         {statisticItems.map((item, index) => (
         <div key={index} className="flex flex-col items-center justify-center">
-          <dt className="mb-2 text-3xl font-extrabold">{item.number}</dt>
+          <dt className="mb-2 text-3xl font-extrabold text-green">{item.number}</dt>
           <dd className="text-gray-500 text-center">{item.name}</dd>
         </div>
         ))}
