@@ -1,6 +1,5 @@
 export * from './Navbar'
 export * from './Hero'
-export * from './About'
 export * from './Community'
 export * from './Statistics'
 export * from './Profile'

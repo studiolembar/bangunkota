@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCameraRetro, faCar, faLaptop, faLeaf, faMusic, faNewspaper, faPaintBrush, faRunning, faTheaterMasks, faUserGraduate } from "@fortawesome/free-solid-svg-icons"
+import Image from "next/image";
 
 export function Community() {
   const communityItems = [
@@ -66,8 +67,15 @@ export function Community() {
   ];
   return (
     <section className="mt-20 px-5 lg:px-0 font-poppins">
-      <h1 className="text-center text-5xl mb-3">Bidang Komunitas</h1>
-      <h2 className="text-center text-lg mb-10">Terdapat 10 bidang di BangunKota</h2>
+      <div className="flex flex-col lg:flex-row items-center gap-2 mb-10">
+        <div>
+          <Image src={"/assets/icons/logo.png"} width={40} height={10} alt="logo"/>
+        </div>
+        <div className="text-center lg:text-left">
+          <h1 className="text-3xl font-medium text-green">Bidang Komunitas</h1>
+          <h2 className="text-lg">Terdapat 10 bidang di BangunKota</h2>
+        </div>
+      </div>
       <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
         {communityItems.map((item) => (
           <div key={item.id} className={`text-center ${item.bg} py-10`}>

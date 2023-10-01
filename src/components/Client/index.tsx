@@ -42,7 +42,10 @@ export function Client(){
     };
     return (
       <section className="px-5 lg:px-0 font-poppins mb-20">
-        <h1 className="text-center text-5xl mb-10">Collaborators</h1>
+        <div className="flex flex-col lg:flex-row items-center gap-2 mb-10">
+        <Image src={"/assets/icons/logo.png"} width={40} height={10} alt="logo"/>
+        <h1 className="text-3xl font-medium text-green text-center lg:text-left">Pentahelix collaborators</h1>
+      </div>
         <div className="my-10">
           <Carousel
             responsive={responsive}

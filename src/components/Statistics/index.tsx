@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Statistics() {
   const statisticItems = [
     {number: "1", name: "Creative Space"},
@@ -9,13 +11,21 @@ export function Statistics() {
   ]
   return (
     <section className="my-20 px-5 lg:px-0 font-poppins">
-      <h1 className="text-center text-5xl mb-10">Statistik</h1>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="flex flex-col lg:flex-row items-center gap-2 text-3xl mb-10 font-medium text-green">
+        <Image src={"/assets/icons/logo.png"} width={40} height={10} alt="logo"/>
+        Impacts
+      </div>
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 bg-yellow py-10 px-2 rounded-3xl">
         {statisticItems.map((item, index) => (
-        <div key={index} className="flex flex-col items-center justify-center">
-          <dt className="mb-2 text-3xl font-extrabold text-green">{item.number}</dt>
-          <dd className="text-gray-500 text-center">{item.name}</dd>
-        </div>
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center"
+          >
+            <dt className="mb-2 text-3xl font-extrabold text-base-100">
+              {item.number}
+            </dt>
+            <dd className="text-gray-500 text-center">{item.name}</dd>
+          </div>
         ))}
       </div>
     </section>

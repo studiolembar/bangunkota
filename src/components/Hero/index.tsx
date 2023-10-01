@@ -18,7 +18,7 @@ export function Hero() {
             Siap Untuk <br />
             #BangunKota
           </h1>
-          <h2 className="text-xl mb-5">Sebuah cara untuk menikmati kota</h2>
+          <h2 className="text-xl mb-5">Community platform to enhance urban culture solution</h2>
           <a className="bg-yellow hover:bg-yellow-light hover:cursor-pointer py-3 text-base-100 font-semibold px-4 rounded-lg text-xl">
             Selengkapnya
           </a>
