@@ -58,7 +58,7 @@ useEffect(() => {
           <p className="text-justify text-base">Bangun Kota merupakan sebuah platform yang menaungi komunitas-komunitas dari berbagai bidang yang ada di kota / kabupaten Bekasi</p>
         </nav>
       </footer>
-      <footer className="footer py-4 border-t bg-base-100 text-base-content border-base-300">
+      <footer className="footer py-4 border-t text-base-content border-base-300 bg-[url('/assets/images/ornament-footer.png')] bg-no-repeat bg-right bg-contain">
         <aside className="items-center">
           <p className="text-base">Copyright © {currentYear} BangunKota.com</p>
         </aside>
