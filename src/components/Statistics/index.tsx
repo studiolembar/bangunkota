@@ -24,7 +24,7 @@ export function Statistics() {
             <dt className="mb-2 text-3xl font-extrabold text-base-100">
               {item.number}
             </dt>
-            <dd className="text-gray-500 text-center">{item.name}</dd>
+            <dd className="text-gray-500 text-center font-semibold">{item.name}</dd>
           </div>
         ))}
       </div>
