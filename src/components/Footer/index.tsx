@@ -17,7 +17,7 @@ useEffect(() => {
   return (
     <section className="px-5 lg:px-0 font-poppins">
       <footer className="footer bg-base-100 pb-5 text-base-content grid lg:grid-cols-4 gap-4">
-        <nav className="col-span-2 lg:col-span-1">
+        <nav className="col-span-2 lg:col-span-1 order-last lg:order-none">
           <header className="text-lg font-semibold">Connect With Us!</header>
           <p className="text-base">Sekretariat Bangun Kota Jalan Apa Bekasi</p>
           <div className="flex items-center">
@@ -51,7 +51,7 @@ useEffect(() => {
           <a className="link text-green text-base">Terms and Conditions</a>
           <a className="link text-green text-base">Privacy Policy</a>
         </nav>
-        <nav className="col-span-2 lg:col-span-1">
+        <nav className="col-span-2 lg:col-span-1 order-first lg:order-none">
           <header>
             <Image src="/assets/icons/bangunkota-logo.png" width={250} height={250} alt="logo"/>
           </header>
