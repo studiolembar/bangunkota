@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function VisiMisi(){
     const misiItems = [
       {desc:"Berperan sebagai forum lintas-komunitas di Kota Bekasi"},
@@ -8,11 +10,13 @@ export function VisiMisi(){
     ]
     return (
       <section className="mt-20 px-5 lg:px-0 font-poppins">
-        <h1 className="text-center text-4xl mb-3 font-medium">Visi & Misi</h1>
-        <hr className="my-4 text-base-300" />
+        <div className="flex flex-col lg:flex-row items-center gap-2 text-3xl mb-10 font-medium text-green">
+          <Image src={"/assets/icons/logo.png"} width={40} height={10} alt="logo"/>
+          Visi & Misi
+        </div>
         <div className="flex gap-10 flex-col lg:flex-row justify-between">
           <div className="lg:w-1/2 w-full">
-            <h1 className="text-3xl mb-2 font-medium text-green">Visi</h1>
+            <h1 className="text-2xl mb-2 font-medium">Visi</h1>
             <article className="text-base text-justify">
               Terciptanya sumber daya kreatif dan ruang publik kota yang
               berkualitas berbasis komunitas dalam menumbuhkan kebanggaan
@@ -21,7 +25,7 @@ export function VisiMisi(){
             </article>
           </div>
           <div className="lg:w-1/2 w-full">
-            <h1 className="text-3xl mb-2 font-medium text-green">Misi</h1>
+            <h1 className="text-2xl mb-2 font-medium">Misi</h1>
             <article className="text-base text-justify">
               {misiItems.map((item, index) => (
               <div key={index} className="flex items-center my-2">

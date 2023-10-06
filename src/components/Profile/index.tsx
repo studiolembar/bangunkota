@@ -1,7 +1,7 @@
 export function Profile() {
   return (
     <section className="mt-3 px-5 lg:px-0 font-poppins">
-      <h1 className="text-4xl mb-3 font-medium">Profile</h1>
+      <h1 className="text-3xl mb-3 font-medium">Profile</h1>
       <article className="text-justify">
         <p className="text-base mb-5">Bangunkota merupakan sebuah forum atau platform bersama, bersinergi dan
         kolaborasi antar sesama komunitas lintas minat. Sebagai salah satu
