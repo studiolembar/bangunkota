@@ -47,8 +47,8 @@ export function Events(){
                 src={item.image}
                 width={280}
                 height={200}
-                className="w-64 h-72 rounded-lg"
-                alt="event"
+                className="w-64 h-72 rounded-lg mb-4 lg:mb-0"
+                alt="event" 
               />
             </div>
           ))}

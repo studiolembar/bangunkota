@@ -9,7 +9,7 @@ interface ButtonSliderProps {
 export function ButtonSlider(props: ButtonSliderProps) {
     const { next, previous } = props;
     return (
-      <div className="absolute top-56 right-36 lg:top-56 lg:right-24">
+      <div className="lg:absolute lg:top-56 lg:right-24 flex justify-center items-center">
         <button
           className="py-1 px-4 rounded-full border border-green mr-3 lg:mr-5"
           onClick={() => previous()}
