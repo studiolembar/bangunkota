@@ -47,7 +47,7 @@ useEffect(() => {
             <a className="link text-green text-base">Home</a>
             <a className="link text-green text-base">Profile</a>
             <a className="link text-green text-base">Event</a>
-            <a className="link text-green text-base">Client</a>
+            <a className="link text-green text-base">Contact</a>
           </nav>
           <nav className="lg:col-span-1">
             <header className="text-lg font-semibold">Kebijakan Kami</header>
