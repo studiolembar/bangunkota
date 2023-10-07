@@ -3,7 +3,7 @@ import { Client, Community, Footer, Hero, NavBar, Statistics } from "../componen
 
 export default function Home() {
   return (
-    <div className="lg:container lg:px-5 lg:mx-auto">
+    <div>
       <NavBar/>
       <Hero/>
       <Community/>
