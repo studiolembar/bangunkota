@@ -1,8 +1,14 @@
+import { faCity } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export function Profile() {
   return (
     <section className="mt-3 px-5 lg:px-0 font-poppins">
       <div className="lg:px-5 lg:container lg:mx-auto">
-        <h1 className="text-3xl mb-3 font-medium">Profile</h1>
+        <div className="flex gap-2">
+          <FontAwesomeIcon icon={faCity} size={"2x"} color="rgb(51 65 85)"/>
+          <h1 className="text-3xl mb-3 font-medium">Profile</h1>
+        </div>
         <article className="text-justify">
           <p className="text-base mb-5">Bangunkota merupakan sebuah forum atau platform bersama, bersinergi dan
           kolaborasi antar sesama komunitas lintas minat. Sebagai salah satu
