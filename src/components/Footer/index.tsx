@@ -15,9 +15,9 @@ useEffect(() => {
 }, []);
 
   return (
-    <section className="px-5 lg:px-0 font-poppins">
+    <section className="px-5 lg:px-0 font-poppins bg-base-200 pt-5 lg:pt-10 rounded-t-3xl">
       <div className="lg:px-5 lg:container lg:mx-auto">
-        <footer className="footer bg-base-100 pb-5 text-base-content grid lg:grid-cols-4 gap-4">
+        <footer className="footer bg-base-200 pb-5 text-base-content grid lg:grid-cols-4 gap-4">
           <nav className="col-span-2 lg:col-span-1 order-last lg:order-none">
             <header className="text-lg font-semibold">Connect With Us!</header>
             <p className="text-base">
@@ -55,12 +55,13 @@ useEffect(() => {
             <a className="link text-green text-base">Privacy Policy</a>
           </nav>
           <nav className="col-span-2 lg:col-span-1 order-first lg:order-none">
-            <header>
+            <header className="mx-auto lg:mx-0">
               <Image
                 src="/assets/icons/bangunkota-logo.png"
                 width={250}
                 height={250}
                 alt="logo"
+                className="w-36 h-12 lg:w-60 lg:h-14"
               />
             </header>
             <p className="text-justify text-base">
@@ -70,7 +71,7 @@ useEffect(() => {
             </p>
           </nav>
         </footer>
-        <footer className="footer py-4 border-t text-base-content border-base-300 bg-[url('/assets/images/ornament-footer.png')] bg-no-repeat bg-right bg-contain">
+        <footer className="bg-base-200 footer py-4 border-t text-base-content border-base-300 bg-[url('/assets/images/ornament-footer.png')] bg-no-repeat bg-right bg-contain">
           <aside className="items-center">
             <p className="text-base">
               Copyright © {currentYear} BangunKota.com
