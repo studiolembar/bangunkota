@@ -140,7 +140,7 @@ export function NavBar() {
                   <div>
                     <div className="p-2">
                       <a className="hover:bg-none font-medium hover:text-green">
-                        Sosial - pendidikan
+                        Sosial & pendidikan
                       </a>
                     </div>
                     <div className="p-2">
@@ -150,11 +150,9 @@ export function NavBar() {
                     </div>
                     <div className="p-2">
                       <a className="hover:bg-none font-medium hover:text-green">
-                        Sejarah - Budaya
+                        Sejarah & Budaya
                       </a>
                     </div>
-                  </div>
-                  <div>
                     <div className="p-2">
                       <a className="hover:bg-none font-medium hover:text-green">
                         Olahraga
@@ -165,13 +163,13 @@ export function NavBar() {
                         Seni Musik
                       </a>
                     </div>
-                    <div className="p-2">
+                  </div>
+                  <div>
+                  <div className="p-2">
                       <a className="hover:bg-none font-medium hover:text-green">
                         Seni Teater
                       </a>
                     </div>
-                  </div>
-                  <div>
                     <div className="p-2">
                       <a className="hover:bg-none font-medium hover:text-green">
                         Seni Rupa
@@ -179,7 +177,7 @@ export function NavBar() {
                     </div>
                     <div className="p-2">
                       <a className="hover:bg-none font-medium hover:text-green">
-                        Foto dan Videografi
+                        Foto & Videografi
                       </a>
                     </div>
                     <div className="p-2">
@@ -187,8 +185,6 @@ export function NavBar() {
                         IT Digital
                       </a>
                     </div>
-                  </div>
-                  <div>
                     <div className="p-2">
                       <a className="hover:bg-none font-medium hover:text-green">
                         Otomotif
