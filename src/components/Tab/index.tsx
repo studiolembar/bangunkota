@@ -1,7 +1,6 @@
 import {  useState } from "react";
 import { Events, Programs } from "..";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendar, faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export function Tab() {
     const [selectedTab, setSelectedTab] = useState('event');
@@ -13,9 +12,9 @@ export function Tab() {
     return (
       <div>
         <div className="lg:px-5 lg:container lg:mx-auto">
-        <div className="flex gap-2 px-5 lg:px-0">
-          <FontAwesomeIcon icon={faCalendarDays} size={"2x"} color="rgb(51 65 85)"/>
-          <h1 className="text-3xl font-medium font-poppins"> Events & Programs</h1>
+        <div className="flex flex-col lg:flex-row items-center gap-2 text-3xl mb-10 font-medium text-green">
+          <Image src={"/assets/icons/logo.png"} width={40} height={10} alt="logo"/>
+          Event & Program
         </div>
         <div className="flex justify-center gap-4 font-poppins mt-10">
           <button

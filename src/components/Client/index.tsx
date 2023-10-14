@@ -65,17 +65,17 @@ export function Client(){
               draggable
               focusOnSelect={false}
               infinite
-              pauseOnHover
+              pauseOnHover={false}
               rewind={false}
               rewindWithAnimation={false}
               slidesToSlide={1}
               transitionDuration={0.1}
             >
               {clientItems.map((item, index) => (
-                <div key={index} className="grayscale hover:grayscale-0">
+                <div key={index}>
                   <Image
                     src={item.url}
-                    className="w-20 h-16 lg:w-28 lg:h-20"
+                    className="w-20 h-16 lg:w-full lg:h-full"
                     width={150}
                     height={0}
                     alt="client"
