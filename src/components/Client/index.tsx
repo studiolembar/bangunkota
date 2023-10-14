@@ -51,7 +51,7 @@ export function Client(){
               alt="logo"
             />
             <h1 className="text-3xl font-medium text-green text-center lg:text-left">
-              Pentahelix collaborators
+              Kolaborator Pentahelix
             </h1>
           </div>
           <div className="my-10">

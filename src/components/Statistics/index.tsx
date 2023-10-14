@@ -14,7 +14,7 @@ export function Statistics() {
       <div className="lg:px-5 lg:container lg:mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-2 text-3xl mb-10 font-medium text-green">
           <Image src={"/assets/icons/logo.png"} width={40} height={10} alt="logo"/>
-          Impacts
+          Dampak
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 bg-yellow py-10 px-2 rounded-3xl">
           {statisticItems.map((item, index) => (
