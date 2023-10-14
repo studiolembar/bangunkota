@@ -205,7 +205,7 @@ export function NavBar() {
           </div>
           <div className="navbar-end">
             <a className="bg-yellow hover:bg-yellow-light hover:cursor-pointer py-2 text-base-100 font-semibold px-4 rounded-lg text-lg">
-              Gabung
+              Gabung!
             </a>
           </div>
         </div>
